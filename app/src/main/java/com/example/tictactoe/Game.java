@@ -46,12 +46,10 @@ public class Game implements Serializable {
             for (int j = 0; j < 3; j++){
                 TileState tile = board[i][j];
                 if (tile == TileState.CROSS){
-                    ROW1++;
-                    System.out.println(ROW1);
+                    ROW1++;                   
                 }
                 if (tile == TileState.CIRCLE){
                     ROW2++;
-                    System.out.println(ROW2);
                 }
                 if (ROW1 == 3){
                     return GameState.PLAYER_ONE;
@@ -70,11 +68,9 @@ public class Game implements Serializable {
                 TileState tile = board[j][i];
                 if (tile == TileState.CROSS) {
                     ROW1++;
-                    System.out.println(ROW1);
                 }
                 if (tile == TileState.CIRCLE) {
                     ROW2++;
-                    System.out.println(ROW2);
                 }
                 if (ROW1 == 3) {
                     return GameState.PLAYER_ONE;
